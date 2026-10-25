@@ -101,7 +101,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
     </section>
 
-    <footer class="rq-footer"><div class="rq-wrap rq-footer-inner"><a class="rq-wordmark" href="/">RIQUEZAR<span>COMUNIDADE DE EMPREENDEDORES DE BAZARES</span></a><a href="/">Voltar ao início</a></div></footer>
+    <footer class="rq-footer"><div class="rq-wrap rq-footer-inner"><div class="rq-footer-logos"><a href="/" aria-label="Página inicial do RIQUEZAR"><img class="rq-footer-logo rq-footer-logo-riquezar" src="/logo-riquezar.png" alt="RIQUEZAR" width="180" height="64" /></a><img class="rq-footer-logo rq-footer-logo-z" src="/logo-z.png" alt="Símbolo Z" width="56" height="56" /></div><a href="/">Voltar ao início</a></div></footer>
   </main>
 
   <style>
@@ -173,7 +173,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .rq-button-light:hover{background:#f6f0e4}
     .rq-footer{padding:30px 0;background:#202820;color:#fffaf0}
     .rq-footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .rq-footer .rq-wordmark{color:#f1b832}
+    .rq-footer-logos{display:flex;align-items:center;gap:12px}
+    .rq-footer-logo{display:block}
+    .rq-footer-logo-riquezar{width:180px;height:64px;object-fit:cover;object-position:center;border-radius:4px}
+    .rq-footer-logo-z{width:56px;height:56px;object-fit:contain;border-radius:8px;background:#fff}
     .rq-footer-inner>a:last-child{font-size:12px;font-weight:700}
     @media(max-width:760px){.rq-hero{padding:45px 0 50px}.rq-hero-grid{grid-template-columns:1fr;gap:35px}.rq-hero-art{min-height:300px}.rq-manifesto-grid{grid-template-columns:1fr;gap:10px}.rq-card-grid,.rq-action-grid{grid-template-columns:1fr}.rq-card{min-height:190px}.rq-card h3{margin-top:28px}.rq-store-grid,.rq-regions-grid{grid-template-columns:1fr;gap:25px}.rq-store-actions{justify-items:start}.rq-neighborhoods{grid-template-columns:1fr 1fr}.rq-invite-inner{align-items:flex-start;flex-direction:column}.rq-footer-inner{align-items:flex-start;flex-direction:column}}
     @media(prefers-reduced-motion:reduce){.riquezar-page *{scroll-behavior:auto!important;transition:none!important}}
