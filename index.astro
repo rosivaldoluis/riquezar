@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="RIQUEZAR | Comunidade de empreendedores de bazares"
+  description="Uma comunidade para empreendedores de bazares trocarem experiências, fortalecerem seus negócios e crescerem juntos."
+>
+  <main class="riquezar-page">
+    <header class="rq-header">
+      <div class="rq-wrap rq-header-row">
+        <a href="/" class="rq-back">← Voltar ao blog</a>
+        <a class="rq-wordmark" href="/riquezar/" aria-label="RIQUEZAR, página inicial">RIQUEZAR<span>COMUNIDADE DE EMPREENDEDORES DE BAZARES</span></a>
+      </div>
+    </header>
+
+    <section class="rq-hero">
+      <div class="rq-wrap rq-hero-grid">
+        <div class="rq-hero-copy">
+          <p class="rq-eyebrow"><span></span> Gente que empreende. Ideias que circulam.</p>
+          <h1>Seu bazar cresce quando <em>a comunidade cresce junto.</em></h1>
+          <p class="rq-lede">RIQUEZAR é uma comunidade pensada para quem empreende com bazares: um espaço para trocar experiências, compartilhar aprendizados e encontrar novas maneiras de fortalecer o próprio negócio.</p>
+          <a class="rq-button" href="#participar">Quero conhecer a comunidade <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="rq-hero-art" aria-hidden="true">
+          <div class="rq-sun"></div>
+          <div class="rq-market-roof"></div>
+          <div class="rq-market-stall"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="rq-crate rq-crate-one"></div><div class="rq-crate rq-crate-two"></div>
+          <span class="rq-art-label">IDEIAS · TROCAS · CRESCIMENTO</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="rq-manifesto">
+      <div class="rq-wrap rq-manifesto-grid">
+        <p class="rq-eyebrow">O que é o RIQUEZAR</p>
+        <div><h2>Uma rede para quem faz o bazar acontecer.</h2><p>Cada empreendedor tem uma história, uma experiência e algo que pode ensinar. O RIQUEZAR aproxima essas vivências para que ideias, contatos e caminhos de negócio possam circular entre pessoas que entendem os desafios de empreender em bazares.</p></div>
+      </div>
+    </section>
+
+    <section class="rq-pillars" aria-label="O que a comunidade valoriza">
+      <div class="rq-wrap">
+        <div class="rq-section-heading"><p class="rq-eyebrow">Uma comunidade feita de troca</p><h2>Conexões que fortalecem o seu negócio.</h2></div>
+        <div class="rq-card-grid">
+          <article class="rq-card rq-card-coral"><span class="rq-card-number">01</span><h3>Trocar experiências</h3><p>Compartilhe desafios, aprendizados e boas ideias com outros empreendedores de bazares.</p></article>
+          <article class="rq-card rq-card-yellow"><span class="rq-card-number">02</span><h3>Aprender na prática</h3><p>Descubra perspectivas e soluções que ajudam a organizar e movimentar o seu negócio.</p></article>
+          <article class="rq-card rq-card-green"><span class="rq-card-number">03</span><h3>Crescer em rede</h3><p>Construa conexões, amplie seu repertório e faça parte de uma comunidade que cresce junto.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="rq-invite" id="participar">
+      <div class="rq-wrap rq-invite-inner">
+        <div><p class="rq-eyebrow">Seu próximo passo</p><h2>Empreende com bazar? Tem lugar para você aqui.</h2><p>Fale com a gente para conhecer a proposta do RIQUEZAR e manifestar seu interesse em participar.</p></div>
+        <a class="rq-button rq-button-light" href="https://wa.me/5511951705334?text=Ol%C3%A1%21%20Quero%20conhecer%20o%20RIQUEZAR%20e%20tenho%20interesse%20em%20participar%20da%20comunidade%20de%20empreendedores%20de%20bazares." target="_blank" rel="noopener noreferrer">Tenho interesse em participar <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <footer class="rq-footer"><div class="rq-wrap rq-footer-inner"><a class="rq-wordmark" href="/riquezar/">RIQUEZAR<span>COMUNIDADE DE EMPREENDEDORES DE BAZARES</span></a><a href="/">Voltar ao blog principal</a></div></footer>
+  </main>
+
+  <style>
+    .riquezar-page{--rq-ink:#202820;--rq-paper:#f6f0e4;--rq-cream:#fffaf0;--rq-coral:#de6048;--rq-yellow:#f1b832;--rq-green:#235745;background:var(--rq-paper);color:var(--rq-ink);font-family:'DM Sans',sans-serif}
+    .rq-wrap{width:min(1160px,calc(100% - 48px));margin-inline:auto}
+    .rq-header{background:var(--rq-cream);border-bottom:1px solid #e4dac8}
+    .rq-header-row{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .rq-back{font-size:12px;font-weight:700}
+    .rq-wordmark{display:inline-grid;gap:2px;font-family:'Manrope',sans-serif;font-size:24px;font-weight:800;letter-spacing:.12em;line-height:1;color:var(--rq-green)}
+    .rq-wordmark span{font-family:'DM Sans',sans-serif;font-size:8px;font-weight:700;letter-spacing:.12em}
+    .rq-hero{padding:62px 0 74px;background:var(--rq-cream);overflow:hidden}
+    .rq-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:60px}
+    .rq-eyebrow{margin:0 0 17px;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    .rq-hero .rq-eyebrow{display:flex;align-items:center;gap:9px;color:#6b6d55}
+    .rq-hero .rq-eyebrow span{width:9px;height:9px;border-radius:50%;background:var(--rq-coral)}
+    .rq-hero h1{max-width:640px;margin:0 0 20px;font-family:'Manrope',sans-serif;font-size:clamp(44px,6vw,72px);font-weight:700;line-height:.99;letter-spacing:-.06em}
+    .rq-hero h1 em{color:var(--rq-coral);font-style:normal}
+    .rq-lede{max-width:560px;margin:0 0 26px;color:#5d655c;font-size:15px;line-height:1.8}
+    .rq-button{display:inline-flex;justify-content:space-between;align-items:center;gap:25px;min-height:50px;padding:0 19px;background:var(--rq-green);color:white;font-size:12px;font-weight:700;transition:transform .2s,background .2s}
+    .rq-button:hover{transform:translateY(-2px);background:#173e31}
+    .rq-hero-art{position:relative;min-height:375px;overflow:hidden;background:#e6bd68;border-radius:48% 48% 5px 5px}
+    .rq-sun{position:absolute;top:35px;right:48px;width:90px;height:90px;border-radius:50%;background:#de6048}
+    .rq-market-roof{position:absolute;left:13%;right:13%;top:105px;height:72px;background:repeating-linear-gradient(90deg,#235745 0 42px,#f1b832 42px 84px);clip-path:polygon(8% 0,92% 0,100% 100%,0 100%)}
+    .rq-market-stall{position:absolute;left:17%;right:17%;top:171px;bottom:34px;display:grid;grid-template-columns:repeat(5,1fr);gap:8px;padding:12px;background:#fffaf0;border:7px solid #235745;border-top:0}
+    .rq-market-stall i{background:repeating-linear-gradient(to bottom,#de6048 0 18px,#fffaf0 18px 36px);border-radius:30px 30px 0 0}
+    .rq-crate{position:absolute;bottom:38px;width:55px;height:42px;background:#b96d3e;border:5px solid #88502f}
+    .rq-crate-one{left:6%}.rq-crate-two{right:6%;height:54px}
+    .rq-art-label{position:absolute;right:17px;bottom:13px;font-size:8px;font-weight:800;letter-spacing:.13em}
+    .rq-manifesto{padding:76px 0;background:var(--rq-green);color:white}
+    .rq-manifesto-grid{display:grid;grid-template-columns:.65fr 1.35fr;gap:50px}
+    .rq-manifesto .rq-eyebrow{color:#f1cb79}
+    .rq-manifesto h2,.rq-section-heading h2,.rq-invite h2{font-family:'Manrope',sans-serif;font-size:clamp(32px,4vw,48px);line-height:1.06;letter-spacing:-.045em}
+    .rq-manifesto h2{max-width:650px;margin:0 0 15px}
+    .rq-manifesto-grid div>p{max-width:680px;margin:0;color:#e1e9e1;font-size:14px;line-height:1.8}
+    .rq-pillars{padding:78px 0}
+    .rq-section-heading{max-width:650px;margin-bottom:30px}
+    .rq-section-heading .rq-eyebrow{color:#947038}
+    .rq-section-heading h2{margin:0}
+    .rq-card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .rq-card{min-height:235px;padding:25px;display:flex;flex-direction:column;align-items:flex-start}
+    .rq-card-coral{background:#de6048;color:white}.rq-card-yellow{background:#f1b832}.rq-card-green{background:#235745;color:white}
+    .rq-card-number{font-size:10px;font-weight:800;letter-spacing:.13em;opacity:.75}
+    .rq-card h3{margin:35px 0 9px;font-family:'Manrope',sans-serif;font-size:22px;line-height:1.15}
+    .rq-card p{margin:0;font-size:12px;line-height:1.65;opacity:.9}
+    .rq-invite{padding:65px 0;background:#de6048;color:white}
+    .rq-invite-inner{display:flex;justify-content:space-between;align-items:center;gap:35px}
+    .rq-invite .rq-eyebrow{color:#ffe5b4}
+    .rq-invite h2{max-width:630px;margin:0 0 12px}
+    .rq-invite-inner>div>p:last-child{max-width:600px;margin:0;color:#fff0e8;font-size:13px;line-height:1.7}
+    .rq-button-light{flex:0 0 auto;background:var(--rq-cream);color:var(--rq-ink)}
+    .rq-button-light:hover{background:#fff}
+    .rq-footer{padding:24px 0;background:#1d2c25;color:white}
+    .rq-footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .rq-footer .rq-wordmark{color:white;font-size:18px}.rq-footer .rq-wordmark span{font-size:7px}
+    .rq-footer-inner>a:last-child{font-size:11px;color:#e1e9e1}
+    @media(max-width:760px){.rq-wrap{width:min(100% - 36px,560px)}.rq-hero-grid{grid-template-columns:1fr;gap:35px}.rq-hero{padding:45px 0 52px}.rq-hero-art{min-height:320px}.rq-manifesto-grid{grid-template-columns:1fr;gap:10px}.rq-card-grid{grid-template-columns:1fr}.rq-card{min-height:190px}.rq-card h3{margin-top:24px}.rq-invite-inner{align-items:flex-start;flex-direction:column}.rq-button-light{width:100%}}
+    @media(max-width:480px){.rq-header-row{min-height:72px}.rq-back{font-size:10px}.rq-wordmark{font-size:19px}.rq-wordmark span{font-size:6px}.rq-hero h1{font-size:45px}.rq-hero-art{min-height:265px}.rq-market-roof{top:80px}.rq-market-stall{top:146px}.rq-sun{width:65px;height:65px;right:28px}.rq-manifesto,.rq-pillars{padding:55px 0}.rq-footer-inner{align-items:flex-start;flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){.riquezar-page *{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</BaseLayout>
