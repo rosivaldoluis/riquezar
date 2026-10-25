@@ -50,6 +50,50 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
     </section>
 
+    <section class="rq-store" id="bazar-da-prosperidade">
+      <div class="rq-wrap rq-store-grid">
+        <div>
+          <p class="rq-eyebrow">Loja parceira</p>
+          <h2>Bazar da Prosperidade</h2>
+          <p>Conheça a loja, veja as novidades no Instagram e fale diretamente pelo WhatsApp para comprar ou doar.</p>
+        </div>
+        <div class="rq-store-actions">
+          <a class="rq-button" href="https://bazardaprosperidade.livrepracrescer.com.br/">Visitar a loja <span aria-hidden="true">↗</span></a>
+          <a class="rq-social-link" href="https://www.instagram.com/bazardaprosperidade385/" target="_blank" rel="noopener noreferrer">Instagram @bazardaprosperidade385 ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="rq-actions" aria-label="Compre ou doe">
+      <div class="rq-wrap">
+        <div class="rq-section-heading"><p class="rq-eyebrow">Bazar da Prosperidade</p><h2>Compre, doe e faça a prosperidade circular.</h2></div>
+        <div class="rq-action-grid">
+          <article class="rq-action-card rq-buy">
+            <p class="rq-eyebrow">COMPRE</p>
+            <h3>Encontre algo especial no bazar.</h3>
+            <p>Fale com a equipe para consultar os itens disponíveis e combinar sua compra.</p>
+            <a class="rq-button" href="https://wa.me/5511981017219?text=Ol%C3%A1%21%20Tenho%20interesse%20em%20comprar%20no%20Bazar%20da%20Prosperidade." target="_blank" rel="noopener noreferrer">Comprar pelo WhatsApp <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="rq-action-card rq-donate">
+            <p class="rq-eyebrow">DOE</p>
+            <h3>Doe e ajude o bazar a continuar.</h3>
+            <p>Entre em contato para conversar sobre sua doação e combinar os próximos passos.</p>
+            <a class="rq-button" href="https://wa.me/5511981017219?text=Ol%C3%A1%21%20Quero%20saber%20como%20doar%20para%20o%20Bazar%20da%20Prosperidade." target="_blank" rel="noopener noreferrer">Doar pelo WhatsApp <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="rq-regions" id="regioes-atendidas">
+      <div class="rq-wrap rq-regions-grid">
+        <div><p class="rq-eyebrow">Onde atendemos</p><h2>Região Central de São Paulo</h2><p>Atendimento nos distritos da Subprefeitura Sé:</p></div>
+        <ul class="rq-neighborhoods">
+          <li>Bela Vista</li><li>Bom Retiro</li><li>Cambuci</li><li>Consolação</li>
+          <li>Liberdade</li><li>República</li><li>Santa Cecília</li><li>Sé</li>
+        </ul>
+      </div>
+    </section>
+
     <section class="rq-invite" id="participar">
       <div class="rq-wrap rq-invite-inner">
         <div><p class="rq-eyebrow">Seu próximo passo</p><h2>Empreende com bazar? Tem lugar para você aqui.</h2><p>Fale com a gente para conhecer a proposta do RIQUEZAR e manifestar seu interesse em participar.</p></div>
@@ -101,6 +145,26 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .rq-card-number{font-size:11px;font-weight:800;letter-spacing:.12em}
     .rq-card h3{margin:50px 0 10px;font-family:'Manrope',sans-serif;font-size:23px;letter-spacing:-.03em}
     .rq-card p{margin:0;color:#55594f;font-size:14px;line-height:1.7}
+    .rq-store{padding:65px 0;background:#f2e3b9}
+    .rq-store-grid{display:grid;grid-template-columns:1fr auto;align-items:center;gap:32px}
+    .rq-store .rq-eyebrow,.rq-action-card .rq-eyebrow,.rq-regions .rq-eyebrow{color:#9b6242}
+    .rq-store h2,.rq-regions h2{margin:0;font-family:'Manrope',sans-serif;font-size:clamp(30px,4vw,44px);letter-spacing:-.045em;line-height:1.1}
+    .rq-store p:not(.rq-eyebrow),.rq-regions p:not(.rq-eyebrow){max-width:660px;margin:14px 0 0;color:#55594f;font-size:15px;line-height:1.7}
+    .rq-store-actions{display:grid;justify-items:start;gap:14px}
+    .rq-social-link{font-size:12px;font-weight:800;color:var(--rq-green)}
+    .rq-actions{padding:88px 0}
+    .rq-action-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .rq-action-card{min-height:300px;padding:32px;border-radius:5px;display:flex;align-items:flex-start;flex-direction:column}
+    .rq-buy{background:#f1d5ca}.rq-donate{background:#d4e1d6}
+    .rq-action-card h3{max-width:440px;margin:16px 0 8px;font-family:'Manrope',sans-serif;font-size:clamp(24px,3vw,34px);letter-spacing:-.04em;line-height:1.15}
+    .rq-action-card>p:not(.rq-eyebrow){max-width:470px;margin:0 0 24px;color:#55594f;font-size:14px;line-height:1.7}
+    .rq-action-card .rq-button{margin-top:auto}
+    .rq-regions{padding:76px 0;background:#235745;color:#fffaf0}
+    .rq-regions .rq-eyebrow{color:#f1b832}
+    .rq-regions p:not(.rq-eyebrow){color:#e5e6db}
+    .rq-regions-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:50px}
+    .rq-neighborhoods{margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:12px;list-style:none}
+    .rq-neighborhoods li{padding:14px 16px;border:1px solid #668274;border-radius:4px;font-size:14px;font-weight:700}
     .rq-invite{padding:75px 0;background:var(--rq-coral);color:white}
     .rq-invite-inner{display:flex;align-items:center;justify-content:space-between;gap:35px}
     .rq-invite .rq-eyebrow{color:#ffe0a7}
@@ -111,7 +175,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .rq-footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
     .rq-footer .rq-wordmark{color:#f1b832}
     .rq-footer-inner>a:last-child{font-size:12px;font-weight:700}
-    @media(max-width:760px){.rq-hero{padding:45px 0 50px}.rq-hero-grid{grid-template-columns:1fr;gap:35px}.rq-hero-art{min-height:300px}.rq-manifesto-grid{grid-template-columns:1fr;gap:10px}.rq-card-grid{grid-template-columns:1fr}.rq-card{min-height:190px}.rq-card h3{margin-top:28px}.rq-invite-inner{align-items:flex-start;flex-direction:column}.rq-footer-inner{align-items:flex-start;flex-direction:column}}
+    @media(max-width:760px){.rq-hero{padding:45px 0 50px}.rq-hero-grid{grid-template-columns:1fr;gap:35px}.rq-hero-art{min-height:300px}.rq-manifesto-grid{grid-template-columns:1fr;gap:10px}.rq-card-grid,.rq-action-grid{grid-template-columns:1fr}.rq-card{min-height:190px}.rq-card h3{margin-top:28px}.rq-store-grid,.rq-regions-grid{grid-template-columns:1fr;gap:25px}.rq-store-actions{justify-items:start}.rq-neighborhoods{grid-template-columns:1fr 1fr}.rq-invite-inner{align-items:flex-start;flex-direction:column}.rq-footer-inner{align-items:flex-start;flex-direction:column}}
     @media(prefers-reduced-motion:reduce){.riquezar-page *{scroll-behavior:auto!important;transition:none!important}}
   </style>
 </BaseLayout>
